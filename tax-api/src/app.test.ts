@@ -1,5 +1,4 @@
 import request from "supertest";
-
 import app from "./app";
 
 describe("GET: '/'", function () {
@@ -10,6 +9,6 @@ describe("GET: '/'", function () {
 
   it("レスポンスはHello, Worldであること", async function () {
     const response = await request(app).get("/");
-    expect(response.text).toBe('Hello World!');
+    expect(response.text).toBe("Hello World!");
   });
 });
